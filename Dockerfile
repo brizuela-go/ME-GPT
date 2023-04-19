@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 7860
 
 # start the app
-CMD ["python3", "gradio", "app.py", "--share"]
+CMD ["python3", "app.py", "--share"]
 
 
 
