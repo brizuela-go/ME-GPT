@@ -2,7 +2,7 @@
 
 ## 🔳 Introduction
 
-This is a simple example of how to use the Open AI API and the ElevenLabs API to generate speech to speech and text with the text-davinci-003 model. The UI/UX was bulit with [Gradio](https://gradio.app/).
+This is a simple example of how to use the Open AI API and the ElevenLabs API to generate speech to speech/text with the text-davinci-003 model. The UI/UX was bulit with [Gradio](https://gradio.app/).
 
 ## 📄 Requirements
 
