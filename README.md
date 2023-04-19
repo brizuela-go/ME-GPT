@@ -39,3 +39,16 @@ $ python app.py
 ## ℹ️ Note
 
 In order to clone your voice, you'll need to upgrade to at least the Starter plan on ElevenLabs. The free plan only allows you to use default voices. You can find more information about the pricing [here](https://beta.elevenlabs.io/pricing).
+
+Also, replace winsound with pydub playback if you're on a non-Windows machine.
+
+```python
+play(AudioSegment.from_wav("output.wav"))
+```
+
+## 🐳 Docker
+
+```bash
+$ docker build -t me-gpt .
+$ docker run --rm -it -p 7860:7860 me-gpt:latest
+```

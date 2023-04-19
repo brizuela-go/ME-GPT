@@ -2,7 +2,7 @@ from elevenlabslib import ElevenLabsUser
 from dotenv import load_dotenv
 import gradio as gr
 import openai
-import winsound
+# import winsound
 from elevenlabslib import *
 from pydub import AudioSegment
 from pydub.playback import play
@@ -47,7 +47,10 @@ def transcribe(audio):
     audio = AudioSegment.from_file(io.BytesIO(audio), format="mp3")
     audio.export("output.wav", format="wav")
 
-    winsound.PlaySound("output.wav", winsound.SND_FILENAME)
+    # winsound.PlaySound("output.wav", winsound.SND_FILENAME)
+
+    # Replace winsound with pydub playback
+    play(AudioSegment.from_wav("output.wav"))
 
     chat_transcript = "\n".join(messages)
     return chat_transcript
